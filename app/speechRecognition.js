@@ -10,8 +10,8 @@ recognition.addEventListener('result', onSpeak);
 
 function onSpeak(e) {
     guess = e.results[0][0].transcript;
-    console.log(e.target.lang);
     showGuessOnScreen(guess);
+    checkIfGuessIsValid(guess);
 }
 
 function showGuessOnScreen(guess) {
@@ -20,3 +20,5 @@ function showGuessOnScreen(guess) {
         <span class="box">${guess}</span>
     `;
 }
+
+recognition.addEventListener('end', () => recognition.start());

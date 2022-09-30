@@ -10,3 +10,5 @@ const minorValueEl = document.getElementById('minor-value');
 const majorValueEl = document.getElementById('major-value');
 minorValueEl.textContent = minorValue;
 majorValueEl.textContent = majorValue;
+
+console.log(secretNumber);

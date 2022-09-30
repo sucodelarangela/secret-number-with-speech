@@ -12,6 +12,8 @@
     --font-family: 'Quicksand', sans-serif;
     --bg-color: #395b64;
     --primary-color: #e7f6f2;
+    --button-color: #a5c9ca;
+    --black: #2c3333;
 }
 
 body {
@@ -32,6 +34,10 @@ h1 {
     font-size: 3em;
 }
 
+h2 {
+    font-size: 4em;
+}
+
 h3 {
     font-size: 1.5em;
 }
@@ -46,6 +52,23 @@ h3 {
     font-size: 3em;
     padding: 0.625rem;
     margin: 1.25rem;
+}
+
+button {
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 1em;
+    color: var(--black);
+    padding: 1rem 2rem;
+    background-color: var(--button-color);
+    border: 3px solid var(--button-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+button:focus {
+    border: 3px solid var(--black);
 }
 
 @media screen and (min-width: 1280px) {
